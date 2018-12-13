@@ -1,0 +1,262 @@
+body {
+	background-color: lightgrey;
+	font-family: Georgia, serif;
+	margin: 0px;
+	display: inline-block;
+}
+
+#bodydiv {
+	height: 705px;
+	width: 1536px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.container {
+	width: 100%;
+	height: 70px;
+	margin: auto;
+}
+
+.title {
+	width: 250px;
+	height: 70px;
+	float: left;
+	color: white;
+}
+
+
+.logout {
+	width: 100px;
+	height: 70px;
+	float: right;
+	color: white;
+}
+
+.nav {
+	background-color: orange;
+}
+
+hr {
+	border: none;
+	height: 3px;
+	margin: 0px;
+	background-color: navy	;
+}
+
+div + hr {
+	background-color: #333;
+}
+
+h1 {
+	text-align: center;
+	color: navy	;
+}
+
+input, select, option {
+	border-radius: 100px;
+	padding: 3px;
+	margin: auto;
+}
+
+.data_input {
+	border: solid;
+	border-radius: 10px;
+	width: 99.7%;
+	height: 110px;
+}
+
+.inp {
+	width: 237px;
+	margin: auto;
+	float: left;
+	padding: 10px;
+	padding-right: 20px;
+}
+
+.inp > input {
+	height: 30px;
+	border: outset;
+	border-radius: 100px;
+	font-size: 14pt;
+}
+
+label {
+	display: block;
+	float: left;
+	font-size: 13pt;
+}
+
+header {
+	text-align: center;
+}
+
+#check {
+	margin-top: 33px;
+	border-style: outset;
+	border-radius: 100px;
+	font-size: 18pt;
+	width: 200px;
+	height: 40px;
+	float: left;
+	background-color: lightblue;
+	border-color: lightblue;
+	color: black;
+}
+
+#check:hover {
+	background-color: dodgerblue;
+	border-color: dodgerblue;
+	cursor: pointer;
+}
+
+#content {
+	background-color: lightyellow;
+	margin: 20px;
+	border-radius: 10px;
+	padding: 20px;
+}
+
+.ticketdiv {
+	padding-left: 10px;
+}
+
+.hotbar {
+	background-color: navy;
+}
+
+.spacer {
+	background-color: lightgrey;
+	height: 10px;
+	border-radius: 100px;
+}
+
+button.nav.button {
+	width: 100px;
+	height: 25px;
+	padding: 0px;
+	margin: 0px;
+	display: inline-block;
+	background-color: orange;
+	border-style: solid;
+	border-left-color: orange;
+	border-top-color: orange;
+	border-bottom-color: orange;
+	border-right-color: black;
+	border-radius: 0px;
+}
+
+button {
+	background-color: lightblue;
+	border-color: lightblue;
+	border-radius: 100px;
+}
+
+button:hover {
+	background-color: dodgerblue;
+	border-color: dodgerblue;
+	cursor: pointer;
+}
+
+button.nav.button:hover {
+	background-color: darkorange;
+	border-bottom-color: darkorange;
+	border-left-color: darkorange;
+	border-top-color: darkorange;
+}
+
+h4, .book {
+	display: inline-block;
+}
+
+.book {
+	float: right;
+	padding: 10px;
+	margin: 35px;
+}
+
+#map{
+	height: 86%;
+	width: 100%;
+	position:absolute;
+	top: 100px;
+	left: 0;
+	z-index: 0;
+	opacity: 0.4;
+}
+
+#content {
+	position: relative;
+	z-index: 1; /* The z-index should be higher than Google Maps */
+	/*width: 300px;*/
+	/*padding: 10px;*/
+	/*background: black;*/
+	opacity: .85; /*Set the opacity for a slightly transparent Google Form*/
+}
+
+#ticketinfo {
+	width: 400px;
+	height: 495px;
+	display: inline-block;
+	float: left;
+	background-color: lightgreen;
+	border-radius: 10px;
+	padding: 5px;
+}
+
+#seatmap {
+	width: auto;
+	height: 500px;
+	display: inline-block;
+	padding-left: 60px;
+}
+
+.title > h2 {
+	color: white;
+	padding-top: 20px;
+}
+
+h2 {
+	color: navy;
+	padding: 0px;
+	margin: 0px;
+}
+
+#bookticket, #confirm {
+	bottom: 30px;
+	width: 300px;
+	height: 50px;
+	margin-left: 50px;
+	font-size: 14pt;
+}
+
+#ticketsummary {
+	display: inline-block;
+	float: right;
+	width: 400px;
+	height: 495px;
+	background-color: pink;
+	border-radius: 10px;
+	padding: 5px;
+}
+
+#map:hover{
+	opacity: 1.0;
+}
+
+#map:hover + #content
+{
+	opacity: 0.3;
+}
+
+.del.button {
+    margin-bottom: 20px;
+}
+
+#logout {
+    cursor: pointer;
+}
+
+#logout:hover {
+    color: orange;
+}

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Reservations TM</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript" src="script.js"></script>
+
+	<style>
+		/* Always set the map height explicitly to define the size of the div
+         * element that contains the map. */
+		/*#map {
+			height: 100%;*/
+		}
+		/* Optional: Makes the sample page fill the window. */
+		html, body {
+			height: 100%;
+			margin: 0;
+			padding: 0;
+		}
+	</style>
+</head>
+<body>
+<div id="bodydiv">
+	<div class="section header">
+		<div class="hotbar container">
+			<div class="title">
+				<h2 style="padding-left: 25px;">Reservations TM</h2>
+			</div>
+			<div class="logout button">
+				<p id="logout" style="margin-top: 25%">Logout</p>
+			</div>
+
+		</div>
+		<div class="nav">
+			<nav>
+				<button id="home" class="nav button" style="float: left;">Home</button>
+				<!--&nbsp;
+                &nbsp; -->
+				<button id="myflights" class="nav button">My Flights</button>
+			</nav>
+		</div>
+	</div>
+
+	<hr>
+
+	<div id="map"></div>
+
+	<div id="content" class="section content">
+		<div class="content header">
+			<h1>Where to?</h1>
+		</div>
+		<br>
+		<p id='error' style='color: red; visibility: hidden;'>Please fill out all three fields.</p>
+		<div class="data_input" style="text-align: center;">
+			<div class="inp" style="margin-left: 268px;"> <!-- 150, 288 -->
+				<label for="from_input">From:</label>
+				<input id="from_input" name="from_input" type="text" placeholder="FLL">
+				<label for="from_input" style="font-size: 9pt;">(3-digit airport code)</label>
+			</div>
+			<div class="inp">
+				<label for="from_input">To:</label>
+				<input id="to_input" name="to_input" type="text" placeholder="LAX">
+				<label for="from_input" style="font-size: 9pt;">(3-digit airport code)</label>
+			</div>
+			<div class="inp">
+				<label for="from_input">Departure date:</label>
+				<input id="depart_input" name="depart_input" type="text" placeholder="2019-01-11">
+				<label for="from_input" style="font-size: 9pt;">(yyyy-mm-dd)</label>
+			</div>
+			<!--<div class="inp">
+                <label for="from_input">Return date:</label>
+                <input name="return_input" type="text">
+            </div>-->
+			<button id="check">Check Flights!</button>
+		</div>
+	</div>
+</div>
+<script>
+    var map;
+    function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+            center: {lat: 48.990, lng: -97.25},
+            zoom: 4
+        });
+    }
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBYwXqcik_nSangwE2rRy48HySpx50iS7k&callback=initMap"
+		async defer></script>
+</body>
+</html>
